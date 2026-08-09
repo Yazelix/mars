@@ -284,7 +284,7 @@ in
       (rioPackage.meta or {})
       // {
         description = "Mars Terminal, a maintainable Rio-derived terminal fork";
-        homepage = "https://github.com/luccahuguet/mars";
+        homepage = "https://github.com/Yazelix/mars";
         mainProgram = "mars";
         longDescription = ''
           Mars Terminal is currently a minimal wrapper around upstream Rio.

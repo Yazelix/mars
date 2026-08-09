@@ -57,16 +57,16 @@ table below is the README-sized feature view.
 
 | Area | Mars Behavior | Evidence |
 | --- | --- | --- |
-| Yazelix packaging | `.#mars` is the first-class package, with Mars metadata, config roots, launcher wrappers, desktop identity, and icon assets. | [`9df072cdfe`](https://github.com/luccahuguet/mars/commit/9df072cdfe), [`d9e303e8b7`](https://github.com/luccahuguet/mars/commit/d9e303e8b7) |
-| Text and status glyphs | Mars uses Yazelix-tuned font defaults, Ghostty-style cell-baseline glyph placement, and constrained Nerd Font/status glyph sizing for balanced Yazelix bars. | [`ca72d7c581`](https://github.com/luccahuguet/mars/commit/ca72d7c581), [`f8e5fa60ee`](https://github.com/luccahuguet/mars/commit/f8e5fa60ee), [`b089bd1d97`](https://github.com/luccahuguet/mars/commit/b089bd1d97) |
-| Theme and palette defaults | Packaged Mars profiles keep Yazelix palette values consistent across adaptive theme files and `[colors]`, avoiding washed-out status and glider colors. | [`809d8bece0`](https://github.com/luccahuguet/mars/commit/809d8bece0) |
-| Quit confirmation | The quit confirmation overlay is a one-shot rounded modal with clear spacing and matching action buttons. | [`5820a9abf0`](https://github.com/luccahuguet/mars/commit/5820a9abf0), [`d44cf8e15e`](https://github.com/luccahuguet/mars/commit/d44cf8e15e), [`260a862d02`](https://github.com/luccahuguet/mars/commit/260a862d02) |
-| Yazelix cursors | Mars consumes the pinned Yazelix Cursors TOML contract directly, resolves it once per process for the active appearance, and renders mono or split block, hollow, beam, underline, and trail sprites with native primitives. | [`b545e539ec`](https://github.com/luccahuguet/mars/commit/b545e539ec), [`6b108cba5a`](https://github.com/luccahuguet/mars/commit/6b108cba5a) |
-| Kitty graphics | Yazi previews that were fully broken render well through Kitty graphics; Mars derives omitted virtual-placement sizes and uses correct WGPU source-rect endpoint semantics for nonzero-origin slices. | [`f2d1ff45a8`](https://github.com/luccahuguet/mars/commit/f2d1ff45a8), [`011d648d83`](https://github.com/luccahuguet/mars/commit/011d648d83) |
-| Link handling | Non-macOS link hints use Ctrl-click, URL hit spans are clipped to useful targets, and edge punctuation remains clickable without opening punctuation. | [`c2a49e7421`](https://github.com/luccahuguet/mars/commit/c2a49e7421), [`1a9dc553ec`](https://github.com/luccahuguet/mars/commit/1a9dc553ec), [`8e43f00c1d`](https://github.com/luccahuguet/mars/commit/8e43f00c1d) |
-| Visual bell | `[bell].visual` draws a short full-window cue on BEL while keeping audio behavior independent. | [`1a80115ef9`](https://github.com/luccahuguet/mars/commit/1a80115ef9) |
-| Nix runtime hardening | The Mars wrapper supplies a package-owned Vulkan ICD default when needed, preserves explicit overrides, and includes launch tracing for dogfooding failures. | [`3dd8210e70`](https://github.com/luccahuguet/mars/commit/3dd8210e70), [`01d732997c`](https://github.com/luccahuguet/mars/commit/01d732997c), [`a650371806`](https://github.com/luccahuguet/mars/commit/a650371806) |
-| Performance evidence | Mars carries reproducible perf gates, parser/terminal/render benchmarks, and gated internal metrics for agent-driven diagnosis. | [`52952ad0c7`](https://github.com/luccahuguet/mars/commit/52952ad0c7), [`3cf912b9bf`](https://github.com/luccahuguet/mars/commit/3cf912b9bf), [`c69d02a716`](https://github.com/luccahuguet/mars/commit/c69d02a716), [`9f6d3a8fcd`](https://github.com/luccahuguet/mars/commit/9f6d3a8fcd) |
+| Yazelix packaging | `.#mars` is the first-class package, with Mars metadata, config roots, launcher wrappers, desktop identity, and icon assets. | [`9df072cdfe`](https://github.com/Yazelix/mars/commit/9df072cdfe), [`d9e303e8b7`](https://github.com/Yazelix/mars/commit/d9e303e8b7) |
+| Text and status glyphs | Mars uses Yazelix-tuned font defaults, Ghostty-style cell-baseline glyph placement, and constrained Nerd Font/status glyph sizing for balanced Yazelix bars. | [`ca72d7c581`](https://github.com/Yazelix/mars/commit/ca72d7c581), [`f8e5fa60ee`](https://github.com/Yazelix/mars/commit/f8e5fa60ee), [`b089bd1d97`](https://github.com/Yazelix/mars/commit/b089bd1d97) |
+| Theme and palette defaults | Packaged Mars profiles keep Yazelix palette values consistent across adaptive theme files and `[colors]`, avoiding washed-out status and glider colors. | [`809d8bece0`](https://github.com/Yazelix/mars/commit/809d8bece0) |
+| Quit confirmation | The quit confirmation overlay is a one-shot rounded modal with clear spacing and matching action buttons. | [`5820a9abf0`](https://github.com/Yazelix/mars/commit/5820a9abf0), [`d44cf8e15e`](https://github.com/Yazelix/mars/commit/d44cf8e15e), [`260a862d02`](https://github.com/Yazelix/mars/commit/260a862d02) |
+| Yazelix cursors | Mars consumes the pinned Yazelix Cursors TOML contract directly, resolves it once per process for the active appearance, and renders mono or split block, hollow, beam, underline, and trail sprites with native primitives. | [`b545e539ec`](https://github.com/Yazelix/mars/commit/b545e539ec), [`6b108cba5a`](https://github.com/Yazelix/mars/commit/6b108cba5a) |
+| Kitty graphics | Yazi previews that were fully broken render well through Kitty graphics; Mars derives omitted virtual-placement sizes and uses correct WGPU source-rect endpoint semantics for nonzero-origin slices. | [`f2d1ff45a8`](https://github.com/Yazelix/mars/commit/f2d1ff45a8), [`011d648d83`](https://github.com/Yazelix/mars/commit/011d648d83) |
+| Link handling | Non-macOS link hints use Ctrl-click, URL hit spans are clipped to useful targets, and edge punctuation remains clickable without opening punctuation. | [`c2a49e7421`](https://github.com/Yazelix/mars/commit/c2a49e7421), [`1a9dc553ec`](https://github.com/Yazelix/mars/commit/1a9dc553ec), [`8e43f00c1d`](https://github.com/Yazelix/mars/commit/8e43f00c1d) |
+| Visual bell | `[bell].visual` draws a short full-window cue on BEL while keeping audio behavior independent. | [`1a80115ef9`](https://github.com/Yazelix/mars/commit/1a80115ef9) |
+| Nix runtime hardening | The Mars wrapper supplies a package-owned Vulkan ICD default when needed, preserves explicit overrides, and includes launch tracing for dogfooding failures. | [`3dd8210e70`](https://github.com/Yazelix/mars/commit/3dd8210e70), [`01d732997c`](https://github.com/Yazelix/mars/commit/01d732997c), [`a650371806`](https://github.com/Yazelix/mars/commit/a650371806) |
+| Performance evidence | Mars carries reproducible perf gates, parser/terminal/render benchmarks, and gated internal metrics for agent-driven diagnosis. | [`52952ad0c7`](https://github.com/Yazelix/mars/commit/52952ad0c7), [`3cf912b9bf`](https://github.com/Yazelix/mars/commit/3cf912b9bf), [`c69d02a716`](https://github.com/Yazelix/mars/commit/c69d02a716), [`9f6d3a8fcd`](https://github.com/Yazelix/mars/commit/9f6d3a8fcd) |
 
 Mars renders Yazi image previews through Kitty graphics in the Yazelix runtime:
 
@@ -77,14 +77,14 @@ Mars renders Yazi image previews through Kitty graphics in the Yazelix runtime:
 Build the Mars package with Nix:
 
 ```sh
-nix build github:luccahuguet/mars#mars
+nix build github:Yazelix/mars#mars
 ./result/bin/mars
 ```
 
 Install it into a Nix profile:
 
 ```sh
-nix profile install github:luccahuguet/mars#mars
+nix profile install github:Yazelix/mars#mars
 mars
 ```
 
@@ -215,12 +215,12 @@ Packaging follow-ups are tracked in public issues:
 
 | Surface | Status |
 | --- | --- |
-| Linux `.deb`/`.rpm` | Native package artifact restoration is tracked in [#2](https://github.com/luccahuguet/mars/issues/2). |
-| Flatpak | Flatpak graphics packaging is tracked in [#3](https://github.com/luccahuguet/mars/issues/3). |
-| AppImage / portable Linux | Portable Linux packaging is tracked in [#4](https://github.com/luccahuguet/mars/issues/4). |
-| macOS | macOS artifact support is tracked in [#5](https://github.com/luccahuguet/mars/issues/5). |
-| Windows | Windows artifact support is tracked in [#6](https://github.com/luccahuguet/mars/issues/6). |
-| Release secrets | GoReleaser and signing policy is tracked in [#7](https://github.com/luccahuguet/mars/issues/7). |
+| Linux `.deb`/`.rpm` | Native package artifact restoration is tracked in [#2](https://github.com/Yazelix/mars/issues/2). |
+| Flatpak | Flatpak graphics packaging is tracked in [#3](https://github.com/Yazelix/mars/issues/3). |
+| AppImage / portable Linux | Portable Linux packaging is tracked in [#4](https://github.com/Yazelix/mars/issues/4). |
+| macOS | macOS artifact support is tracked in [#5](https://github.com/Yazelix/mars/issues/5). |
+| Windows | Windows artifact support is tracked in [#6](https://github.com/Yazelix/mars/issues/6). |
+| Release secrets | GoReleaser and signing policy is tracked in [#7](https://github.com/Yazelix/mars/issues/7). |
 
 Runtime dogfooding is strongest on Linux through Yazelix and Nix. The test
 workflow runs Rust checks on Linux, macOS, and Windows, and MSYS2 release-build
@@ -235,7 +235,7 @@ dispatch. It uses inherited GoReleaser Pro release machinery, requires
 signing secrets are present.
 
 The release-secrets decision is tracked in
-[#7](https://github.com/luccahuguet/mars/issues/7) and Bead `yzt-c2d`. Until
+[#7](https://github.com/Yazelix/mars/issues/7) and Bead `yzt-c2d`. Until
 that is resolved, treat Nix builds and source builds as the validated
 first-party surfaces, and treat inherited Rio release packaging as a path to
 evaluate instead of a public Mars guarantee.

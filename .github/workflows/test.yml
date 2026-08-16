@@ -47,7 +47,7 @@ jobs:
         sys: [MINGW64, UCRT64, CLANG64]
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
 
     - name: Setup MSYS2
       uses: msys2/setup-msys2@v2
